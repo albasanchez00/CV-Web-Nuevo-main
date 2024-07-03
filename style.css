@@ -1,0 +1,178 @@
+/* Pegar margenes de los bloques al ancho de la web */
+* {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #292929;
+}
+
+.body {
+    overflow: auto; /* Permite el desplazamiento */
+    scrollbar-width: none; /* Firefox */
+}
+
+.body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Edge */
+}
+
+
+/* Bloque Logo */
+.contenido_img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.img_logo {
+    width: 150px;
+    height: 140px;
+    display: block;
+}
+
+/* Bloque Hamburguesa */
+#hamburguesa{
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 0 15px 0 0;
+    background-color: red;
+}
+
+#hamburguesa:hover~.menu_lateral{
+    display: block;
+}
+
+/* Adaptar contenido segun el dispositivo */
+@media (min-width:1024px) {
+    #hamburguesa{
+        display: none;
+    }
+    
+}
+
+@media (max-width:1023px) {
+    .menu_lateral{
+        display: none;
+    }
+    body{
+        display: block;
+    }
+    body .bloque_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+    }
+    .contenido_img{
+        display: grid;
+        justify-content: center;
+        width: 82px;
+        height: 82px;
+        margin: 0;
+        padding: 0;
+    }
+    .img_logo{
+        width: 80px;
+        height: auto;
+    }
+}
+
+
+
+/* Bloque Menú */
+.menu_lateral {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.menu_lateral li {
+    /* padding-top: 5px; */
+    padding: 20px;
+}
+
+.menu_lateral span {
+}
+
+.menu_lateral a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+
+.menu_lateral a:hover {
+    color: #c5a47e;
+}
+
+.separador {
+    border-bottom: 1px solid gray;
+    width: auto;
+}
+
+
+
+/* Bloque Menú Lateral */
+.bloque_menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    width: 10%;
+    height: 100%;
+    padding: 0 20px;
+    max-width: 900px;
+}
+
+
+
+
+
+/* Menu desplegable */
+.menu_bar {
+    display: none;
+}
+
+
+
+
+/* Bloque CABECERA */
+.bloque_contenido {
+    background-color: aliceblue;
+    width: 89%;
+    height: 100%;
+    padding: 0 20px;
+}
+.bloque_contenido p {
+    max-width: 1023px;
+    padding: 0 20px;
+}
+
+.texto_1{
+
+}

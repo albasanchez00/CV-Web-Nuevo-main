@@ -1,0 +1,106 @@
+/* Pegar margenes de los bloques al ancho de la web */
+* {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #292929;
+}
+
+#cabecera {
+    width: 100vw;
+    display: flex;
+}
+
+/* Logo */
+.contenido_img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 0;
+}
+
+.img_logo {
+    width: 150px;
+    height: 140px;
+    display: block;
+}
+
+/* Menus */
+
+
+#menus {
+
+    width: 80%;
+    text-align: right;
+
+}
+
+#menus nav {
+    height: 100%;
+}
+
+#menus nav a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menus ul {
+    list-style: none;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 100px;
+    height: 100%;
+}
+
+/*      Imagen       */
+#bloque_Img {
+    display: flex;
+    /* Para usar flexbox */
+    justify-content: center;
+    /* Para centrar horizontalmente */
+}
+
+#bloque_Img div {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+#bloque_Img img {
+    width: 100%;
+}
+
+/* Bloque Columna 1 */
+#bloque_col1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#bloque_col1 div {
+    width: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .2);
+}
